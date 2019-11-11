@@ -96,7 +96,7 @@ body {
   font-size: 14px;
   position: relative;
   display: inline-block;
-  max-width: 122px;
+  min-width: 122px;
 }
 
 .header__contacts-business-hours-link {
