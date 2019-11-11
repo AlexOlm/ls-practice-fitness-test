@@ -1,0 +1,102 @@
+.body {
+  width: 100%;
+  min-height: 100%;
+}
+
+.wrapper__intro {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.intro__background {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/gym1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__interactive-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+}
+
+.intro__interactive-block {
+  animation: myAnimation 1.1s 0.4s forwards;
+}
+
+@keyframes myAnimation {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  30% {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+
+  48% {
+
+    transform: scale(0.7);
+  }
+
+  66% {
+    transform: scale(1.2);
+  }
+
+  85% {
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+.intro__logo {
+  margin-bottom: 5.3%;
+  scale: 3;
+}
+
+.intro__button {
+  width: 172px;
+  height: 35px;
+  border-radius: 3px;
+  background: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__button:hover {
+  background-color: #131415;
+  transition: 0.6s;
+}
+
+.intro__button-text {
+  font-family: 'OpenSans-Bold';
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+}
+
